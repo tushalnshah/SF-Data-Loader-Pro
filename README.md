@@ -10,3 +10,22 @@ Key Features
 4. Massive Scale: Streams data directly to disk. Supports downloading millions of records with automated polling and timeout handling.
 5. Persistent Download Manager: Track live export progress, cancel active jobs, and view historical download metadata (file size, exact filters used, success rates) across app restarts.
 6. Modern Stack: Electron, React, Vite, Tailwind CSS, and JSforce.
+
+This app was built based on the Salesforce Data loader app (https://github.com/forcedotcom/dataloader), the main purpose was to export data in batches rather than 1 file at a time.
+
+**Old Data Loader (Salesforce)**
+Tech Stack: Java. Require JRE install.
+Speed: Slow. Use older APIs.
+Workflow: Export one object at a time.
+Filtering: Manual SOQL queries for dates.
+Auth: Passwords + Security Tokens. Often store credentials on disk.
+UI: Clunky. 1990s enterprise design.
+
+**SF Data Loader Pro**
+Tech Stack: Electron + React. Standalone .exe. No Java.
+Speed: Fast. Enforce Bulk API v2 for massive scale directly to disk.
+Workflow: Mass export. Select multiple objects, click export once. Parallel processing.
+Filtering: Visual UI. Select date fields and ranges. No SOQL needed.
+Auth: OAuth PKCE flow. Web login. No security tokens.
+Security: Zero-trust. Pure in-memory session. Strict Context Isolation.
+UI: Modern, responsive Tailwind CSS interface. Live progress tracking.
