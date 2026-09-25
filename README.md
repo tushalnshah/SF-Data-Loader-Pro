@@ -14,18 +14,18 @@ Key Features
 This app was built based on the Salesforce Data loader app (https://github.com/forcedotcom/dataloader), the main purpose was to export data in batches rather than 1 file at a time.
 
 **Old Data Loader (Salesforce)**
-Tech Stack: Java. Require JRE install.
-Speed: Slow. Use older APIs.
-Workflow: Export one object at a time.
-Filtering: Manual SOQL queries for dates.
-Auth: Passwords + Security Tokens. Often store credentials on disk.
-UI: Clunky. 1990s enterprise design.
+1. Tech Stack: Java. Require JRE install.
+2. Speed: Slow. Use older APIs.
+3. Workflow: Export one object at a time.
+4. Filtering: Manual SOQL queries for dates.
+5. Auth: Passwords + Security Tokens. Often store credentials on disk.
+6. UI: Clunky. 1990s enterprise design.
 
 **SF Data Loader Pro**
-Tech Stack: Electron + React. Standalone .exe. No Java.
-Speed: Fast. Enforce Bulk API v2 for massive scale directly to disk.
-Workflow: Mass export. Select multiple objects, click export once. Parallel processing.
-Filtering: Visual UI. Select date fields and ranges. No SOQL needed.
-Auth: OAuth PKCE flow. Web login. No security tokens.
-Security: Zero-trust. Pure in-memory session. Strict Context Isolation.
-UI: Modern, responsive Tailwind CSS interface. Live progress tracking.
+1. Tech Stack: Electron + React. Standalone .exe. No Java.
+2.Speed: Fast. Enforce Bulk API v2 for massive scale directly to disk.
+3. Workflow: Mass export. Select multiple objects, click export once. Parallel processing.
+4. Filtering: Visual UI. Select date fields and ranges. No SOQL needed.
+5. Auth: OAuth PKCE flow. Web login. No security tokens.
+6. Security: Zero-trust. Pure in-memory session. Strict Context Isolation.
+7. UI: Modern, responsive Tailwind CSS interface. Live progress tracking.
